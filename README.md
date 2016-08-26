@@ -88,5 +88,6 @@ There are console commands below for project development
 |`npm run test` | Run project tests once.|
 |`npm run tdd` | Launch project in TDD mode. Every code change cause tests run.|
 |`npm run (dist|prod)` | Build project for test/production server in directory `dist`/`prod`.|
+|`npm run deploy (dist|prod)` | Deploy specified directory (for example `dist`/`prod`) to GitHub pages.|
 |`bundle exec cap (testing|production) deploy:setup`| Preparing test/production server for project deployment (runs once before first deployment)|
 |`bundle exec cap (testing|production) deploy` | Deploy test/production build on test/production server.|
