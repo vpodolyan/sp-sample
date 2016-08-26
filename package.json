@@ -2,7 +2,7 @@
   "name": "projects",
   "private": "true",
   "bin": {
-    "deploy": "./run-deploy.js"
+    "sp-deploy": "./run-deploy.js"
   },
   "scripts": {
     "tdd": "karma start",
@@ -13,7 +13,8 @@
     "dev": "MODE=DEBUG node ./run-dev.js",
     "dist": "MODE=DIST node ./run-build.js",
     "prod": "MODE=PROD node ./run-build.js",
-    "precommit": "npm run test"
+    "precommit": "npm run test",
+    "deploy": "./run-deploy.js"
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",
@@ -47,6 +48,7 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "gh-pages": "^0.11.0",
     "html-webpack-plugin": "^2.15.0",
     "husky": "^0.10.2",
     "ibrik": "^2.0.0",

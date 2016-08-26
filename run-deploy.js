@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-var ghpages = require("gh-pages");
-var path = require("path");
-
-console.log(process.argv)
+const ghpages = require("gh-pages");
+const path = require("path");
 
 if (process.argv.length < 3) {
-  console.log("Source dir isn't defined");
+  console.log("Please specify a directory name you want to deploy as 1st argument");
+  return;
 }
 
-ghpages.publish(path.join(__dirname, proccess.arg[2]));
+console.log(`Deploying ${process.argv[2]} directory to Github pages...`);
+
+ghpages.publish(path.join(__dirname, process.argv[2]), () => console.log("Deploy completed"));
