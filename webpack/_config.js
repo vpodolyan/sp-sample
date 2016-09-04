@@ -109,20 +109,9 @@ const doConfig = opts => {
         'window.$': 'jquery',
         _: 'underscore',
       }),
-      // new (HtmlWebpackPlugin)({
-      //   filename: 'index.html',
-      //   template: 'html/index.jade',
-      // }),
-      // new (HtmlWebpackPlugin)({
-      //   filename: 'auth_fail.html',
-      //   template: 'html/auth_fail.jade',
-      //   inject: false,
-      // }),
-      // new (HtmlWebpackPlugin)({
-      //   filename: 'auth_success.html',
-      //   template: 'html/auth_success.jade',
-      //   inject: false,
-      // }),
+      new HtmlWebpackPlugin({
+        title: 'React-Redux simple app',
+      }),
       new ExtractTextPlugin('frassets/app.[contenthash].css', {
         allChunks: true,
         disable: IS_DEV,

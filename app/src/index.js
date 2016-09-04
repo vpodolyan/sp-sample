@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'; // eslint-disable-line
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
-import Counter from './components/Counter';
+import Counter from './components/Counter'; // eslint-disable-line
 import reducers from './reducers';
 
 const store = createStore(reducers);

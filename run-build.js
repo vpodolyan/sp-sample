@@ -32,7 +32,8 @@ function build() {
     if (err) {
       throw new Error(err);
     }
-    console.log('Project build is complete');
+
+    console.log('Project build is completed');
   });
 }
 
