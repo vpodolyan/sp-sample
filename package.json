@@ -8,7 +8,7 @@
     "tdd": "karma start",
     "test": "npm run lint && karma start --single-run",
     "lint": "npm run lintxo && npm run lintcoffee",
-    "lintcoffee": "coffeelint -f .coffeelintrc app/scripts",
+    "lintcoffee": "coffeelint -f .coffeelintrc app/",
     "lintxo": "xo *.js && xo app/**/*.js webpack/**/*.js --esnext",
     "dev": "MODE=DEBUG node ./run-dev.js",
     "dist": "MODE=DIST node ./run-build.js",
@@ -18,9 +18,6 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",
-    "backbone": "1.1.2",
-    "backbone-mixin": "lexich/backbone-mixin",
-    "backbone.epoxy": "^1.3.4",
     "bootstrap": "^3.3.6",
     "cookies": "^0.5.1",
     "jquery": "^1.12.0",

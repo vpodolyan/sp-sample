@@ -12,7 +12,7 @@ const doConfig = opts => {
   return {
     context: path.resolve('app'),
     entry: {
-      app: ['babel-polyfill', './index.js'],
+      app: ['babel-polyfill', './src/index.js'],
     },
     resolve: {
       extensions: [
