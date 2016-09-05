@@ -1,3 +1,4 @@
+/* eslint no-unused-vars: off */
 import React, {Component, PropTypes} from 'react';
 
 class Counter extends Component {
